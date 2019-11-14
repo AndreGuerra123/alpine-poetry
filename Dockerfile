@@ -1,2 +1,3 @@
-FROM alpine:edge
-RUN apk add --no-cache poetry --repository=http://dl-cdn.alpinelinux.org/alpine/edge/testing
+FROM python:3.7
+ENV PATH "/root/.poetry/bin:${PATH}"
+RUN curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
