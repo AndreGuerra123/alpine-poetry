@@ -1,6 +1,5 @@
 FROM python:3.7-alpine
 RUN apk update --no-cache 
-RUN apk upgrade --no-cache
 RUN apk add git --no-cache
 RUN apk add curl --no-cache
 RUN apk add build-base --no-cache
